@@ -8,7 +8,7 @@ function App() {
 <div className="container">
 <Weather defaultCity="Jokkmokk"/>
 <footer>
-This project was coded by Laima Ciselonoka and is {" "} <a href="https://github.com/" target="_blank" rel="noreferrer"> open-sourced on GitHub</a>
+This project was coded by Laima Ciselonoka and is {" "} <a href="https://github.com/laimac/weather-project" target="_blank" rel="noreferrer"> open-sourced on GitHub</a>
 </footer>
 </div>
     </div>

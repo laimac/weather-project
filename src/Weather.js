@@ -3,6 +3,7 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 
 export default function Weather(props){
@@ -49,6 +50,7 @@ setCity(event.target.value);
                     </div>
                 </form>
                 <WeatherInfo data={weatherData}/>
+                <WeatherForecast />
                 </div>
         )
     } else{

@@ -12,6 +12,7 @@ let [city, setCity]=useState(props.defaultCity);
     function handleResponse(response){
         setWeatherData({
             ready: true,
+            coordinates: response.data.coord,
             name: response.data.name,
             temperature: response.data.main.temp,
             wind: response.data.wind.speed,
@@ -50,7 +51,7 @@ setCity(event.target.value);
                     </div>
                 </form>
                 <WeatherInfo data={weatherData}/>
-                <WeatherForecast />
+                <WeatherForecast coordinates={weatherData.coordinates}/>
                 </div>
         )
     } else{

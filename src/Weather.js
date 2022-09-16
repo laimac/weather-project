@@ -19,11 +19,11 @@ let [city, setCity]=useState(props.defaultCity);
             date: new Date((response.data.dt*1000)),
             humidity: response.data.main.humidity,
             description: response.data.weather[0].description,
-icon: response.data.weather[0].icon});
+            icon: response.data.weather[0].icon});
     }
 
     function search(){
-        let apiKey="5f472b7acba333cd8a035ea85a0d4d4c";
+        let apiKey="aa3395dedb0e4908d3cb2a4b546ea887";
         let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     }
